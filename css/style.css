@@ -17,6 +17,11 @@
   outline: none;
   line-height: 1.4;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 button {
   border: 0;
@@ -44,7 +49,30 @@ fieldset {
 .general-button__link:hover {
   background: #f7651e;
 }
+.header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.header-block__title {
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: calc(30px + 15 * (100vw / 1800));
+  text-align: center;
+}
+
+.header-block__text {
+  margin-bottom: 33px;
+  color: #d2d2d2;
+  font-family: "LatoRegular";
+  font-size: 16px;
+  font-size: calc(12px + 4 * (100vw / 1800));
+}
 .header {
   position: absolute;
   top: 0;
@@ -91,7 +119,20 @@ fieldset {
   top: 50px;
   left: 0;
 }
+.menu-burger__item {
+  margin-bottom: 30px;
+}
 
+.menu-burger__item:first-child {
+  margin-bottom: 0;
+}
+
+.menu-burger__link {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: calc(35px + 35 * (100vw / 1800));
+  text-decoration: none;
+}
 .intro {
   background: url(../img/header/jarek-ceborski.jpg) no-repeat;
   background-size: cover;
@@ -145,6 +186,170 @@ fieldset {
   font-family: "LatoRegular";
   font-size: calc(12px + 7 * (100vw / 1800));
 }
+.who-we-are {
+  background: url(../img/who-we-are/bg.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.who-we-are__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.who-we-are__item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.who-we-are__suptitle {
+  color: #fe7634;
+  font-family: LatoBold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.who-we-are__title {
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: calc(30px + 15 * (100vw / 1800));
+}
+
+.who-we-are__text {
+  margin-bottom: 36px;
+  width: 90%;
+  color: #4e4f4e;
+  font-family: "LatoRegular";
+  font-size: calc(13px + 7 * (100vw / 1800));
+}
+
+.who-we-are__img {
+  width: 94%;
+}
+.delicious-flavour {
+  background: url(../img/delicious-flavour/bg.jpg);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.delicious-flavour::before {
+  content: '';
+  background: url(../img/delicious-flavour/vector.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 63px;
+  position: absolute;
+  top: -16px;
+  left: 0;
+}
+
+.delicious-flavour::after {
+  content: '';
+  background: url(../img/delicious-flavour/vector-bottom.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 56px;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+}
+
+.delicious-flavour__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0;
+}
+
+.view-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.view-menu__item {
+  background: #fff3e4;
+  position: relative;
+}
+
+.view-menu__item_col {
+  width: 25%;
+}
+
+.view-menu__item_col::before {
+  content: '';
+  border: 1px solid #9d9247;
+  width: 92%;
+  height: 95.6%;
+  position: absolute;
+  top: 13px;
+  left: 11px;
+}
+
+.view-menu__item_row {
+  width: 50%;
+}
+
+.view-menu__row {
+  display: flex;
+  position: relative;
+}
+
+.view-menu__row::before {
+  content: '';
+  border: 1px solid #9d9247;
+  width: 95.6%;
+  height: 92%;
+  position: absolute;
+  top: 13px;
+  left: 11px;
+}
+
+.view-menu__top, .view-menu__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-menu__top_s, .view-menu__bottom_s {
+  width: auto;
+  height: 295px;
+}
+
+.view-menu__title {
+  margin-bottom: 13px;
+  color: #1e1e1e;
+  font-family: "LatoBold";
+  font-size: calc(16px + 8 * (100vw / 1800));
+}
+
+.view-menu__price {
+  margin-bottom: 18px;
+  color: #fe7634;
+  font-family: "LatoBold";
+  font-size: calc(25px + 15 * (100vw / 1800));
+}
+
+.view-menu__text {
+  width: 191px;
+  color: #494949;
+  font-family: "LatoRegular";
+  font-size: calc(13px + 4 * (100vw / 1800));
+  text-align: center;
+}
+
 
 
 
