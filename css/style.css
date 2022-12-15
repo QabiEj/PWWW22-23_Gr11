@@ -595,3 +595,91 @@ fieldset {
 .booking-form-enter__input:focus {
   background: #e7e7e6;
 }
+
+.blog {
+  background: url(../img/blog/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.blog__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.blog__col {
+  width: 21%;
+}
+
+.blog__col_s {
+  width: 47%;
+}
+
+.blog__item {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.blog__item_s {
+  margin: 0 20px;
+}
+
+.blog__picture {
+  display: flex;
+}
+
+.blog__content {
+  padding: 15px;
+  border-left: 2px solid #e1e1e1;
+  border-right: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.blog__text-icons {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.blog__icon {
+  background: url(../img/bookin-form/time.png) no-repeat;
+  width: 17px;
+  height: auto;
+  margin-right: 7px;
+}
+
+.blog__date {
+  color: #848484;
+  font-family: "LatoBold";
+  font-size: 15px;
+}
+
+.blog__title {
+  color: #1b1b1b;
+  font-family: "LatoBold";
+  font-size: 18px;
+}
+
+.blog__text {
+  color: #494949;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  font-family: "LatoRegular";
+  font-size: calc(13px + 4 * (100vw / 1800));
+}
+
+.blog__link {
+  color: #fe7634;
+  font-family: "LatoBold";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.blog__link::after {
+  content: '';
+  background: url(../img/blog/next.png) no-repeat;
+  width: 6px;
+  height: auto;
+}
