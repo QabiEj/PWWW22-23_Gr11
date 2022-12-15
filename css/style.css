@@ -683,3 +683,20 @@ fieldset {
   width: 6px;
   height: auto;
 }
+.footer {
+  background: url(../img/footer/bg.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  background: url(../img/footer/vector.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 68px;
+  position: absolute;
+  top: -21px;
+  left: 0;
+}
