@@ -73,6 +73,29 @@ fieldset {
   font-size: 16px;
   font-size: calc(12px + 4 * (100vw / 1800));
 }
+.booking-form-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.booking-form-general__title {
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  font-size: calc(30px + 15 * (100vw / 1800));
+}
+
+.booking-form-general__text {
+  color: #545454;
+  margin-bottom: 30px;
+  font-family: "LatoRegular";
+  font-size: calc(12px + 4 * (100vw / 1800));
+}
 .header {
   position: absolute;
   top: 0;
@@ -132,6 +155,17 @@ fieldset {
   font-family: 'Playfair Display', serif;
   font-size: calc(35px + 35 * (100vw / 1800));
   text-decoration: none;
+}
+.open {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #001c48 0%, #090979 50%, #001f4f 100%);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: center;
 }
 .intro {
   background: url(../img/header/jarek-ceborski.jpg) no-repeat;
@@ -494,6 +528,70 @@ fieldset {
   cursor: pointer;
   z-index: 111;
 }
+.booking-form {
+  background: url(../img/bookin-form/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
 
+.booking-form-enter {
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+.booking-form-enter > fieldset {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
+}
 
+.booking-form-enter__label-icons {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.booking-form-enter__label {
+  color: #4d4543;
+  font-family: "LatoBold";
+  font-size: 16px;
+}
+
+.booking-form-enter__icon {
+  width: 17px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.booking-form-enter__icon_date {
+  background: url(../img/bookin-form/date.png) no-repeat;
+}
+
+.booking-form-enter__icon_time {
+  background: url(../img/bookin-form/time.png) no-repeat;
+}
+
+.booking-form-enter__icon_people {
+  background: url(../img/bookin-form/people.png) no-repeat;
+}
+
+.booking-form-enter__input {
+  padding-left: 30px;
+  color: #e7e7e6;
+  border: 2px solid #e7e7e6;
+  border-radius: 28px;
+  width: 313px;
+  height: 48px;
+  font-family: "LatoBold";
+  font-size: 15px;
+}
+
+.booking-form-enter__input:hover {
+  background: #e7e7e6;
+}
+
+.booking-form-enter__input:focus {
+  background: #e7e7e6;
+}
