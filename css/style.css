@@ -801,3 +801,12 @@ fieldset {
   font-family: "LatoBold";
   font-size: 22px;
 }
+.copyright {
+  color: #a0a0a0;
+  padding-bottom: 30px;
+}
+
+.copyright__item_sb {
+  display: flex;
+  justify-content: flex-end;
+}
