@@ -758,3 +758,46 @@ fieldset {
 .subscribe__btn:hover {
   background: #f7651e;
 }
+
+.footer-menu {
+  margin-top: 45px;
+}
+
+.footer-menu::after {
+  content: '';
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #3b3f43;
+}
+
+.footer-menu__title {
+  color: white;
+  margin-bottom: 17px;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.footer-menu__text {
+  color: #a0a0a0;
+  font-family: "LatoRegular";
+  font-size: 16px;
+}
+
+.footer-menu__text > span {
+  margin-top: 10px;
+  display: block;
+}
+
+.footer-menu__text_p {
+  padding-top: 48px;
+}
+
+.footer-menu__time {
+  color: #fe7634;
+  display: block;
+  margin-top: 6px;
+  font-family: "LatoBold";
+  font-size: 22px;
+}
