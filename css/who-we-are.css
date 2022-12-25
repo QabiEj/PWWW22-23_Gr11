@@ -1,0 +1,55 @@
+.who-we-are {
+    background: url(../img/who-we-are/bg.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+   margin-top:0;
+   width: auto;
+   height: 650px;
+
+}
+.who-we-are__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+.who-we-are__item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    margin-left: 160px;
+    margin-right: 60px;
+ 
+}
+.who-we-are__suptitle {
+    color: #fe7634;
+    font-family: LatoBold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: -200px;
+ 
+}
+.who-we-are__title {
+    margin-bottom: 300px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: calc(30px + 15 * (100vw / 1800));
+}
+.who-we-are__text {
+  
+    margin-top:-270px;
+    margin-bottom: 27px;
+    width: 140%;
+    color: #4e4f4e;
+    font-family: "LatoRegular";
+    font-size: calc(13px + 7 * (100vw / 1800));
+}
+.who-we-are__img {
+    width: 350em;
+    height: calc(width/5);
+    
+}

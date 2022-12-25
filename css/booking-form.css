@@ -1,0 +1,66 @@
+.booking-form {
+    background: url(../img/bookin-form/bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top:-112px;
+    padding-bottom:20px;
+}
+.booking-form-enter {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.booking-form-enter > fieldset {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+.booking-form-general{
+    padding-top:100px;
+   
+}
+
+
+.booking-form-enter__label-icons {
+    display: flex;
+    margin-bottom: 18px;
+   
+}
+.booking-form-enter__label {
+    color: #4d4543;
+    font-family: "LatoBold";
+    font-size: 16px;
+}
+.booking-form-enter__icon {
+    width: 17px;
+    height: auto;
+    margin-right: 10px;
+}
+.booking-form-enter__icon_date {
+    background: url(../img/bookin-form/date.png) no-repeat;
+}
+.booking-form-enter__icon_time {
+    background: url(../img/bookin-form/time.png) no-repeat;
+}
+.booking-form-enter__icon_people {
+    background: url(../img/bookin-form/people.png) no-repeat;
+}
+.booking-form-enter__input {
+    padding-left: 30px;
+    color: #81817e;
+    border: 2px solid #e7e7e6;
+    border-radius: 28px;
+    width: 313px;
+    height: 48px;
+    font-family: "LatoBold";
+    font-size: 15px;
+}
+.booking-form-enter__input:hover {
+    background: #e7e7e6;
+}
+.booking-form-enter__input:focus {
+    background: #e7e7e6;
+}
