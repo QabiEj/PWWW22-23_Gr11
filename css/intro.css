@@ -1,0 +1,48 @@
+.intro {
+    background: url(../img/header/jarek-ceborski.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 880px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro::after {
+    content: '';
+    background: url(../img/header/vector.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 56px;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+}
+.intro__inner {
+    margin-top: 130px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.intro__suptitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: calc(17px + 13 * (100vw / 1800));
+    font-weight: 100;
+}
+.intro__title {
+    margin-bottom: 36px;
+    font-family: 'Playfair Display', serif;
+    font-size: calc(40px + 62 * (100vw / 1800));
+    font-style: italic;
+    font-weight: 800;
+}
+.intro__text {
+    width: 50%;
+    margin-bottom: 33px;
+    font-family: "LatoRegular";
+    font-size: calc(12px + 7 * (100vw / 1800));
+}
