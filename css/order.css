@@ -1,0 +1,131 @@
+
+#ordersection{
+    margin-top:50px;
+    background-image: linear-gradient(to right, rgb(255, 255, 204), rgb(255, 181, 102), rgb(255, 255, 204));
+  margin-bottom: 70px;
+ 
+  border-radius: 120px;
+ width: 45%;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+.form-group{
+    margin-top:23px;
+  
+}
+
+
+#orderTable{
+    display: block;
+   justify-items: center;
+   align-items: center;
+}
+form{
+    display:grid;
+ justify-content: center;
+   
+}
+.form-control{
+   /*change color of inputs*/
+    color: rgb(17, 17, 17);
+   
+}
+form label{
+    color: black;
+    font-size: 20px;
+    
+}
+select{
+    display: block !important;
+}
+.form-check{
+    padding: 0;
+}
+h5 {
+   /*styling for all h5 elements*/
+    color: #FE5A07 
+}
+.col-md-5{
+   /*align content in all col-md-5*/
+    text-align: left;
+    padding: 23px;
+    display:inline-block;
+}
+
+.form-group small{
+   /*style small text in the form*/
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+}
+.btn {
+   /* style all buttons */
+    color: #fff;
+    background-color: #FE5A07 !important;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+}
+#yourorder{
+    text-align: center;
+    display: none;
+    padding-bottom: 5%;
+   align-items: center;
+  
+   
+}
+#orderTable{
+    margin-top:30px;
+    display:-ms-grid;
+    border-style:dashed;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-spacing: 12px;
+}
+
+table .table-sm th{
+    text-align: center;
+    margin-bottom: 20px;
+   
+    
+}
+table .table-sm thead{
+    text-align: center;
+    border-style: dotted;
+ 
+
+}
+table .table-sm tr{
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+table .table-sm{
+    display:inline-block;
+}
+#text{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+#deliveryOptions{
+    display: none;
+}
+#delivery{
+    display: none;
+    text-align: center;
+    padding: 3% 
+}
+#pickUpConfirmation, #deliveryConfirmation{
+    display: none;
+    text-align: center;
+}
+div.totalPick, div.name, div.location, div.totalDel, div.phone{
+   /*style how the divs display */
+    display: inline;
+    font-weight: bold;
+}
+
