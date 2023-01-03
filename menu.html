@@ -3,49 +3,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bistro Cafe Menu</title>
+    <title>Bistro Cafe | Menu</title>
     <link rel="icon" href="img/header/favicon.ico">
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/footer_copy.css" />
+    <link rel="stylesheet" href="css/footer-copy.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/order.css">
+    <link rel="stylesheet" href="css/header-copy.css" />
+    <script src="js/menu-burger.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/order.js"></script>
-    
-    
+
+
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-container container">
-          <input type="checkbox" name="" id="">
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header__inner">
+            <nav class="menu">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="#">Menu</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="confirmation.html">Game</a>
+
+                </div>
+              </div>
+              </ul>
+            </nav><!--/.menu -->
+            <div class="logo">
+              <img src="./img/header/logo.png" alt="">
+            </div><!--/.logo -->
+             <div class="social">
+              <div class="social__item">
+                <a target="blank" href="https://twitter.com/Twitter">  <img src="./img/header/twitter.png" alt=""> </a>
+              </div>
+              <div class="social__item">
+                <a target="blank" href=https://investor.fb.com/home/default.aspx">  <img src="./img/header/facebook.png" alt=""> </a>
+              </div>
+              <div class="social__item">
+                <a target="blank" href="https://www.google.com/">  <img src="./img/header/google.png" alt=""> </a>
+              </div>
+              <div class="social__item">
+                <a target="blank" href="https://in.pinterest.com/">  <img src="./img/header/pinterest.png" alt=""> </a>
+              </div>
+              <div class="social__item">
+              <a target="blank" href="https://www.instagram.com/instagram/?hl=en"> <img src="./img/header/ph.png" alt=""> </a>
+              </div>
+            </div><!--/.social -->
           </div>
-          <ul class="menu-items">
-              <li><a href="#index">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#food-menu">Menu</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#blog">Blog</a></li>
-          </ul>
-          <h1 class="logo"><a href="#showcase"> <img src="img/header/favicon.png" height="100px" width="100px" alt="" srcset="" ></a> </h1>
+        </div>
       </div>
-  </nav>
-    <section class="showcase-area" id="showcase">
-      <div class="showcase-container">
-       
-        <h1 class="main-title" id="home">Bistro Cafe</h1>
-        <p>Nothing brings together like us</p>
-        
-        <a href="#food-menu" class="btn btn-primary">Menu</a>
-        
+    </header>
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="intro__inner">
+            <h2 class="intro__suptitle">Nothing brings together like</h2>
+            <h1 class="intro__title">Bistro Cafe</h1>
+            <div class="intro__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi conse quat ipsum, nec sagittis sem nibh id elituis sed odio sit amet.</div>
+            <div class="general-button">
+              <a href="#food" class="general-button__link">Menu</a>
+            </div>
+          </div>
+        </div>
       </div>
-      
-    </section>
-    <section id="vector_img">
-   
+     
     </section>
     
     <section id="food">
@@ -59,10 +88,7 @@
               <h3>Flame Grilled Burger</h3>
               <a
                 href="#burgers"
-                class="btn btn-primary"
-                target="blank"
-                >Go to Burgers Menu</a
-              >
+                class="btn btn-primary">Go to Burgers Menu</a>
             </div>
           </div>
         </div>
@@ -71,12 +97,7 @@
             <img src="img/menu/dessert.jpg" alt="error" />
             <div class="img-content">
               <h3>Desserts</h3>
-              <a
-                href="#Desserts"
-                class="btn btn-primary"
-                target="blank"
-                >Go to Desserts Menu</a
-              >
+              <a href="#Desserts" class="btn btn-primary">Go to Desserts Menu</a>
             </div>
           </div>
         </div>
@@ -85,11 +106,7 @@
             <img src="img/menu/Coffe.webp"error" />
             <div class="img-content">
               <h3>Beverages</h3>
-              <a
-                href="#Beverages"
-                class="btn btn-primary"
-                target="blank"
-                >Go to Beverages Menu</a
+              <a href="#Beverages" class="btn btn-primary">Go to Beverages Menu</a
               >
             </div>
           </div>
@@ -380,14 +397,12 @@
               <p class="food-price">Price: &euro; 1.60</p>
             </div>
           </div>
-          
-      </div>
-    </section>
-   
-   <div class="container-fluid">
+        </section>
+      
+        <div class="container-fluid">
         
            <div id="ordersection">
-                <h3><b>Order here</b></h3>
+                <h2 class="food-menu-heading"><b>Order here</b></h2>
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
@@ -398,7 +413,7 @@
                                     <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
                                 </div>
                                 <h5>Kindly pick the following:</h5>
-                                <div class="form-group">
+                                 <div class="form-group">
                                     <label for="food-item">Food item</label>
                                     <select class="form-control" id="food-item" required>
                                         <option>Crispy Veg Burger</option>
@@ -448,7 +463,7 @@
                                         </div>
                                         <div class="col-md-5">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="Redbull" value="Redbull" id="redbull">
+                                                <input class="form-check-input" type="checkbox" name="drinks" value="Redbull" id="redbull">
                                                 <label class="form-check-label" for="redbull">Redbull</label>
                                             </div>
                                             <div class="form-check">
@@ -490,7 +505,7 @@
             </div>
             <div id="yourorder">
                 <br>
-                <hr width="30%" color="#FE5A07" border-color="#FE5A07">
+               
                 <h3 class="salutation"><b>Here's your order:</b></h3>
                 <div id="orderDetails">
                     <div class="row">
@@ -614,8 +629,8 @@
           
         </div>
           
-      </div>                                 
-                                   
+      </div>
+    
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -647,19 +662,19 @@
             
             <div class="social social_show">
               <div class="social__item">
-                <img src="./img/header/twitter.png" alt="">
+                <img src="img/header/twitter.png" alt=""> 
               </div>
               <div class="social__item">
-                <img src="./img/header/facebook.png" alt="">
+               <img src="./img/header/facebook.png" alt="">
               </div>
               <div class="social__item">
-                <img src="./img/header/google.png" alt="">
+                <img src="./img/header/google.png" alt=""> 
               </div>
               <div class="social__item">
-                <img src="./img/header/pinterest.png" alt="">
+                  <img src="./img/header/pinterest.png" alt=""> 
               </div>
               <div class="social__item">
-                <img src="./img/header/ph.png" alt="">
+              <img src="./img/header/ph.png" alt=""> 
               </div>
             </div><!--/.social -->
           </div>
