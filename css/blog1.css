@@ -1,0 +1,310 @@
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+
+.html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1.4;
+}
+body {
+
+ background-image: url(../img/who-we-are/bg.jpg);
+
+}
+#blog{
+  padding-top: -50px;
+}
+.container {
+  max-width: 1200px;
+
+  margin: auto;
+}
+.intro__text {
+    width: 40%;
+    margin-bottom: 33px;
+    font-family: "LatoRegular";
+    font-size: calc(12px + 7 * (100vw / 1800));
+  }
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  font-family: LatoBold;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  display: inline-block;
+  background: #fe7634;
+  color: white;
+  font-family: LatoBold;
+  font-size: calc(15px + 4 * (100vw / 1800));
+  padding: 17px 47px;
+  border-radius: 33px;
+  text-decoration: none;
+  font-style: normal;
+  z-index: 1;
+}
+.btn-primary:hover{
+  background: #f7651e;
+}
+ 
+.clearfix{
+	clear: both;
+}
+.container{
+	width: 1140px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.col-div-6{
+	width: 50%;
+	float: left;
+}
+.logo{
+	font-weight: bold;
+	font-size: 25px;
+	color: var(--black);
+}
+.logo span{
+	color: var(--main);
+}
+
+/*.banner-section{
+	background: var(--main);
+	height: 400px;
+	overflow: hidden;
+}*/
+.heading{
+	color: #f7651e;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 14%;
+}
+.p1{
+	color: white;
+    width: 395px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.input-box{
+	box-shadow: 1px 7px 8px 0px #222121;
+    width: 360px;
+    border-radius: 50%;
+}
+.input-box input[type="text"]{
+	padding: 9px;
+    width: 265px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.input-box button{
+	padding: 10px 27px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    margin-left: -6px;
+    background: var(--darkblue);
+    color: white;
+    cursor: pointer;
+}
+.ban-img{
+	width: 250px;
+	margin-bottom:-50px;
+
+}
+.b-img{
+	width: 100%;
+	border-radius: 10px;
+}
+.heading1{
+	margin-top: 10px;
+	color: #f7651e;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.blog-heading{
+	font-size: 29px;
+  font-family: 'Lato Regular';
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--black);
+}
+.text{
+	font-size: 13px;
+  font-family: 'LatoRegular';
+    letter-spacing: 1px;
+    color: var(--black);
+    margin-bottom: 2px;
+}
+.name{
+	text-transform: uppercase;
+    font-weight: 600;
+    color: #494949;
+    font-size: 13px;
+}
+.lr-box{
+	padding: 10px 20px;
+
+}
+.b-img-1{
+	width: 100%;
+	height: 160px;
+	border-radius: 10px;
+	margin-top: 7px;
+}
+.blog-heading-1{
+	font-size: 20px;
+    font-weight: bold;
+    font-family: "Lato Regular";
+    margin-bottom: 3px;
+    color: #1b1b1b;
+}
+.line{
+	    width: 100%;
+	    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+.lr-box:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+.box-1:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.box-2{
+	width: 28.5%;
+	float: left;
+	margin: 25px;
+}
+.box-2:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+#myBtn {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fe7634;
+  border: none;
+  background-color: #fff;
+}
+
+.player{
+  font-family: 'Lato Regular';
+  font-size: 13px;
+  color: #fe7634;
+  border:none;
+  background:none;
+
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel{
+  background-color: white;
+  color: #ddd;
+}
+.expandable {
+  border: 1px solid url(../img/blog/bg.jpg);
+  margin-bottom: 0.5em;
+}
+
+/* Hides all the expandees */
+.expandable .expandee {
+  display: none;
+}
+
+/* Shows the expandee when .expanded is added to the parent of expandee */
+.expanded .expandee {
+  display: block;
+}
+.toggle-button {
+  font-family: "Lato Regular";
+  font-size: 13px;
+  color: #fe7634;
+  background:none;
+  border: none;
+  margin-bottom: 0em;
+}
+.latest{
+  color: #fe7634;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+.day {
+  background-image: url(../img/blog/bg.jpg);
+}
+.night{
+ background-image: url(../img/blog/Picture1.jpg);
+}
+
+@media (max-width: 768px) {
+ 
+
+
+  /* ......./ food /......... */
+
+  .food-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .food-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .food-type {
+    box-shadow: 5px 5px 10px 0 #aaa;
+  }
+
+  .img-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+  .food-menu-container img {
+    margin: auto;
+  }
+
+  .food-menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+ 
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .img-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container .btn {
+    font-size: 0.7rem;
+  }
+}
