@@ -1,24 +1,23 @@
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+} 
 
 .html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Playfair Display', serif;
  background-image: url(../img/who-we-are/bg.jpg);
 }
 
 .container {
   max-width: 1200px;
-  width: 90%;
   margin: auto;
 }
 
@@ -52,34 +51,6 @@ body {
 
 
 
-/* ............/navbar/............ *
-
-/* desktop mode............/// */
-
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
-  display: none;
-}
-
-
-
-.navbar {
-  box-shadow: 0px 5px 10px 0px rgb(183, 182, 182);
-  position: fixed;
-  width: 100%;
-  background-color: rgb(245, 235, 220);
-  color: #000;
-  opacity: 0.85;
-  height: 70px;
-  z-index: 12;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  height: 64px;
-  align-items: center;
-}
 
 .menu-items {
   order: 2;
@@ -103,56 +74,6 @@ body {
 .menu-items a:hover {
   color: #117964;
   transition: color 0.3s ease-in-out;
-}
-
-.logo {
-  margin-top: auto;
-  float: left;
-  order: 1;
-  font-size: 2.3rem;
-  
-}
-
-/* ............//// Showcase styling ////......... */
-
-.showcase-area {
-  height: 70vh;
-  background-image: url(../img/header/jarek-ceborski1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#vector_img{
-  content: '';
-background: url(../img/header/vector.png) no-repeat;
-background-size: cover;
-position: relative;
-width: 100%;
-height: 60px;
-
-left: 0;
-top:-30px;
-}
-
-
-.showcase-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 1.8rem;
-  color: rgb(255, 254, 254);
-  font-style:italic;
-}
-
-.main-title {
-  font-family: 'Playfair Display', serif;
-  margin-top: 1.5em;
-  color: rgb(253, 253, 253);
-  font-style: italic;
-  font-weight:800;
-  font-size:66px;
 }
 
 
@@ -298,109 +219,8 @@ top:-30px;
 /* ......../ media query /.......... */
 
 @media (max-width: 768px) {
-  .navbar {
-    opacity: 0.95;
-  }
+ 
 
-  .navbar-container input[type="checkbox"],
-  .navbar-container .hamburger-lines {
-    display: block;
-  }
-
-  .navbar-container {
-    display: block;
-    position: relative;
-    height: 64px;
-  }
-
-  .navbar-container input[type="checkbox"] {
-    position: absolute;
-    display: block;
-    height: 32px;
-    width: 30px;
-    top: 20px;
-    left: 20px;
-    z-index: 5;
-    opacity: 0;
-  }
-
-  .navbar-container .hamburger-lines {
-    display: block;
-    height: 23px;
-    width: 35px;
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .navbar-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #333;
-  }
-
-  .navbar-container .hamburger-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .navbar-container .hamburger-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .navbar-container .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .navbar .menu-items {
-    padding-top: 100px;
-    background: #fff;
-    height: 100vh;
-    max-width: 300px;
-    transform: translate(-150%);
-    display: flex;
-    flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
-  }
-
-  .navbar .menu-items li {
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  .logo {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 2rem;
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    transform: rotate(35deg);
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    transform: scaleY(0);
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    transform: rotate(-35deg);
-  }
 
   /* ......./ food /......... */
 
@@ -427,10 +247,6 @@ top:-30px;
     font-size: 65%;
   }
 
-  .navbar .menu-items li{
-      font-size: 1.6rem;
-  }
-
   .food-menu-container img {
     margin: auto;
   }
@@ -440,18 +256,6 @@ top:-30px;
     text-align: center;
   }
 
-  .logo {
-    position: absolute;
-    top: 06px;
-    right: 15px;
-    font-size: 3rem;
-  }
-
-  .navbar .menu-items li {
-    margin-bottom: 2.5rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -463,11 +267,4 @@ top:-30px;
     font-size: 0.7rem;
   }
 }
-
-@media (orientation: landscape) and (max-height: 500px) {
-  .showcase-area {
-    height: 50vmax;
-  }
-}
-
 
