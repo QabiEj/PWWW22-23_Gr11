@@ -8,6 +8,7 @@
     <link rel="icon" href="img/header/favicon.ico">
       <link rel="stylesheet" href="css/style.css">
       <script src="js/menu-burger.js"></script>
+      <script src="js/validation.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
 </head>
 <div class="page">
@@ -34,20 +35,20 @@
               <img src="./img/header/logo.png" alt="">
             </div><!--/.logo -->
             <div class="social">
-              <div class="social__item"><a href="https://twitter.com/">
-                <img src="./img/header/twitter.png" alt=""></a>
+              <div class="social__item">
+                <img src="./img/header/twitter.png" alt="">
               </div>
-              <div class="social__item"><a href="https://www.facebook.com/">
-                <img src="./img/header/facebook.png" alt=""></a>
+              <div class="social__item">
+                <img src="./img/header/facebook.png" alt="">
               </div>
-              <div class="social__item"> <a href="https://www.google.com/">
-                <img src="./img/header/google.png" alt=""></a>
+              <div class="social__item">
+                <img src="./img/header/google.png" alt="">
               </div>
-              <div class="social__item"><a href="https://www.pinterest.com/">
-                <img src="./img/header/pinterest.png" alt=""></a>
+              <div class="social__item">
+                <img src="./img/header/pinterest.png" alt="">
               </div>
-              <div class="social__item"><a href="https://www.instagram.com/">
-                <img src="./img/header/ph.png" alt=""></a>
+              <div class="social__item">
+                <img src="./img/header/ph.png" alt="">
               </div>
             </div><!--/.social -->
           </div>
@@ -241,7 +242,8 @@
               <p class="booking-form-general__text">Call  (800) 123-4567 from 5AM - 11PM daily, or book online with OpenTable. Reservations required for parties of 6 or more.</p>
               <img src="./img/bookin-form/icon.png" alt="">
             </div>
-            <form class="booking-form-enter">
+
+            <form class="booking-form-enter" action="" name="booking-form-enter" onsubmit="return checkIfValidDate()">
               <fieldset class="row">
                 <div class="booking-form-enter__item col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="booking-form-enter__label-icons">
@@ -362,7 +364,7 @@
                 <p class="subscribe__text">Get latest news & updates in your inbox.</p>
               </div>
               <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7 col-sm-12 subscribe__item">
-                <form class="subscribe_form" action="" name="subscribe__form" onsubmit="return validateForm()">
+                <form class="subscribe__form" action="" name="subscribe__form" onsubmit="return validateForm()">
                   <input type="email" class="subscribe__input" placeholder="Subscribe our delicious dishes">
                   <button class="subscribe__btn">Subscribe Now</button>
                 </form>
