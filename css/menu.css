@@ -6,19 +6,34 @@
 @font-face {
   font-family: "LatoBold";
   src: url("../fonts/Lato-Bold.ttf") format("truetype");
-} 
+}
 
 .html {
   font-size: 62.5%;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1.4;
+}
 body {
+
  background-image: url(../img/who-we-are/bg.jpg);
 }
 
 .container {
   max-width: 1200px;
+
   margin: auto;
+}
+.intro__text {
+  width: 50%;
+  margin-bottom: 33px;
+  font-family: "LatoRegular";
+  font-size: calc(12px + 7 * (100vw / 1800));
 }
 
 .btn {
@@ -50,6 +65,7 @@ body {
 }
 
 
+/* desktop mode............/// */
 
 
 .menu-items {
@@ -75,7 +91,6 @@ body {
   color: #117964;
   transition: color 0.3s ease-in-out;
 }
-
 
 
 /* ..........////Food category///........... */
@@ -246,7 +261,6 @@ body {
   html {
     font-size: 65%;
   }
-
   .food-menu-container img {
     margin: auto;
   }
@@ -256,6 +270,7 @@ body {
     text-align: center;
   }
 
+ 
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -267,4 +282,6 @@ body {
     font-size: 0.7rem;
   }
 }
+
+
 
