@@ -65,6 +65,9 @@ fieldset {
   justify-content: center;
   align-items: center;
 }
+.logo{
+  margin-left: 130px;
+}
 
 .header-block__title {
   margin-bottom: 10px;
@@ -106,8 +109,6 @@ fieldset {
   font-family: "LatoRegular";
   font-size: calc(12px + 4 * (100vw / 1800));
 }
-.logo{
-  margin-left: 130px;
 .dropbtn {
   background: url(../img/header/menu.png) no-repeat ;
   width: 50px;
@@ -147,4 +148,3 @@ fieldset {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-
