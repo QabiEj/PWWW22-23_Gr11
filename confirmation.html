@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/confirmation.css">
+  
+    <title>Bistro Cafe | Confirmation</title>
+</head>
+
+<body>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            setTimeout(function() {
+                alert("Confirmation completed. Form sent. Redirecting to Home!")
+                setTimeout(function() {
+                    window.location.replace("index.html");
+                }, 1500);
+            }, 1000);
+        }
+    </script>
+    <div class="wrapper fadeInDown">
+        <h2 class="fadeIn first" id="info"> Put the image inside the box to confirm you are not a robot </h2>
+
+        <div class="fadeIn second" id="container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <img class="fadeIn third" id="drag1" src="img/header/favicon.png" draggable="true" ondragstart="drag(event)" width="170px" height="150px">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache-manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Cafe | Contact</title>
+    <link rel="icon" href="img/header/favicon.ico">
+    <link rel="stylesheet" href="css/footer-copy.css" />
+    <link rel="stylesheet" href="css/header-copy.css" />
+    <script src="js/menu-burger.js"></script>
+    <link rel="stylesheet" href="css/about.css"/>
+    <script src="js/validation.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+  <style type="text/css">
+   .general-button__link{
+max-width:175px;
+
+font-size:12px;
+max-height: 60px;
+   }
+   .about-search table{
+    background-color: rgba(233, 144, 48, 0.102);
+    margin-top:-60px;
+   }
+   body {
+  
+  background-image: url(img/who-we-are/bg.jpg);
+ }
+
+input[type=submit] {
+   background-color: gray;
+   color: white;
+   padding: 12px 20px;
+   border: 1.5px dashed purple;
+   border-radius: 6px;
+   cursor: pointer;
+}
+input[type=text], input[type=email], input[type=password], select, textarea{
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box; 
+   -o-box-sizing:border-box; 
+   -ms-box-sizing:border-box; 
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+}
+.contact-wrapper{
+   background-color: rgba(232, 182, 31, 0.13);
+   margin-left: 300px;
+   margin-right:300px;
+   margin-top:40px;
+   padding: 23px;
+   border-radius: 80px;
+  margin-bottom: 40px;
+}
+#container2{
+   margin-bottom: 200px;
+
+}
+  </style>
+    
+          
+</head>
+<body>
+<div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header__inner">
+            <nav class="menu">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="menu.html">Menu</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="about.html">About</a>
+                  <a href="">Contact</a>
+                  <a href="game.html">Game</a>
+
+                </div>
+              </div>
+              </ul>
+            </nav><!--/.menu -->
+            <div class="logo">
+              <img src="./img/header/logo.png" alt="">
+            </div><!--/.logo -->
+            <div class="social">
+              <div class="social__item">
+                <img src="./img/header/twitter.png" alt="">
+              </div>
+              <div class="social__item">
+                <img src="./img/header/facebook.png" alt="">
+              </div>
+              <div class="social__item">
+                <img src="./img/header/google.png" alt="">
+              </div>
+              <div class="social__item">
+                <img src="./img/header/pinterest.png" alt="">
+              </div>
+              <div class="social__item">
+                <img src="./img/header/ph.png" alt="">
+              </div>
+            </div><!--/.social -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="intro__inner">
+            <h2 class="intro__suptitle">Nothing brings together like</h2>
+            <h1 class="intro__title">Bistro Cafe</h1>
+            <div class="intro__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi conse quat ipsum, nec sagittis sem nibh id elituis sed odio sit amet.</div>
+            <div class="general-button">
+              <a href="#container1" class="general-button__link">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+   
+      <div id="container1" align="center">
+        <h2 class="titletext"><span>C</span>ontact <span>F</span>orm</h2>
+        <div class="contact-wrapper">
+           <form class="contactform" action="confirmation.html" name="contactform" onsubmit="return validateForm()">
+            
+               <label>Name:</label>
+               <input type="text" name="firstname" placeholder="Your name.." autofocus minlength="3">
+               <label>Last Name: </label>
+               <input type="text" name="lastname" placeholder="Your last name.." maxlength="20">
+              
+               <label>Email: </label>
+               <input type="email" name="email" placeholder="Email.." multiple autocomplete="off">
+               <label>Subject: </label>
+               <select id="subject" name="reason" >
+                <option value="hidden" selected disabled hidden>Choose here..</option>
+                  <option value="reason1">I didn't like the food</option>
+                  <option value="reason2">I didn't like the staff</option>
+                  <option value="reason3">I didn't like the place</option>
+                  <option value="reason4">Too noisy</option>
+                  <option value="reason5">Other</option>
+               </select>
+               <label>Age: </label>
+               <input type="radio" name="age" value="under 18">
+               <label>Under 18</label>
+               <input type="radio" name="age" value="19 to 30">
+               <label>19 to 30</label>
+               <input type="radio" name="age" value="31 to 50">
+               <label>31 to 50</label> <br><Br>
+              <label>How would you like us to respond: </label>
+               <input type="checkbox" name="answer" required>
+               <label>Email</label>
+               <input type="checkbox" name="answer">
+               <label>Text Message</label>
+               <input type="checkbox" name="answer">
+               <label>Call</label><br><br>
+               <label>City:</label><br>
+               <input list="city" 
+        style="width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;">
+            <datalist id="city">
+                <option value="Ferizaj">
+                <option value="Prishtine">
+                <option value="Decan">
+                <option value="Gjilan">
+                <option value="Gjakove">
+                <option value="Prizren">
+                <option value="Peje">
+            </datalist> <br><br>
+               <label>Message: </label>
+               <textarea id="message" name="message" placeholder="Write something.. " style="height: 120px;"></textarea>
+               <input type="submit" onclick="clickCounter()" value="Send Message" formtarget="_blank" >
+           </form><br><hr><br>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12500.508206065544!2d-122.7164861!3d38.4385342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebd841e6bb4ea1b!2sApple!5e0!3m2!1sen!2s!4v1546789523957" width="660" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="loginbox" align="center">
+            <h2 style="text-align: center;" class="titletext"><span>S</span>ign Up Here</h2><br>
+            <form class="loginform" name="loginform" style="width: 350px" onsubmit="return validateLogin()">
+                <p style="text-align: left;">Username:</p>
+                <input type="text" name="" placeholder="Enter Username.."><keygen name="key">
+                <p style="text-align: left;">Password</p>
+                <input type="password" name="pass" placeholder="Enter Password.."><br>
+                <p style="text-align: left;">Retype Password</p>
+                <input type="password" name="repass" placeholder="Retype Password.."><br>
+                <input type="submit" name="" value="Sign Up" formmethod="post"><br><br>
+</form>
+                <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+      <label for="rate">Do you mind rating us?</label><br><br>  
+      <input name="flevel" id="rate" type="range" min="0" max="10" value="0"> 
+      <output for="rate" name="level">0</output>/10
+    </form>
+            <div id="result"></div>
+            
+        </div>
+         </div>
+       </div>
+           
+ <div id="container2" align="center">
+    
+       
+    <span style="position: absolute;  left: 720px; ">
+     <button class="general-button__link" type="button" onclick="document.getElementById('date_time_button').innerHTML = Date(), localClickCounter()">
+    Click and see Date and Time.</button>
+    <p id="date_time_button"></p>
+    <p id="localResult"></p>
+    </span>
+    <span style="position: absolute; left: 480px; ">
+      <button class="general-button__link" onclick="myLocation() ">Click here to get Location</button>
+      <p id="demo"></p>
+    </span>
+ </div>
+ <script type="text/javascript">
+    var x = document.getElementById("demo");
+    function myLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "User denied the request for Geolocation."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "Location information is unavailable."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "The request to get user location timed out."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "An unknown error occurred."
+          break;
+      }
+    }
+    function clickCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+          sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+    function localClickCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("localResult").innerHTML = "You have clicked the clockbutton " + localStorage.clickcount + " time(s).";
+      } else {
+        document.getElementById("localResult").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+    </script>
+
+</div>
+
+
+
+
+	  <footer class="footer">
+		<div class="container">
+		  <div class="row">
+			<div class="row subscribe">
+			  <div class="subscribe__item">
+			   
+			  </div>
+			</div>
+		  </div>
+		  <div class="row footer-menu">
+			<div class="footer-menu__item">
+			  <h4 class="footer-menu__title">Contact Location</h4>
+			  <p class="footer-menu__text">3784 Patterson Road,<br> #8 New York, CA 69000 <br><span>(201) 256 - 3689</span></p>
+			</div>
+			<div class="footer-menu__item">
+			  <h4 class="footer-menu__title">Working Hours</h4>
+			  <p class="footer-menu__text">Monday - Friday</p>
+			  <span class="footer-menu__time">09:00 AM - 10:00 PM</span>
+			</div>
+			<div class="footer-menu__item">
+			  <p class="footer-menu__text_p">Saturday - Sunday</p>
+			  <span class="footer-menu__time">09:00 AM - 11:00 PM</span>
+			</div>
+			<div class="footer-menu__item">
+			  <h4 class="footer-menu__title">Social Network</h4>
+  
+			
+			  
+			  <div class="social social_show">
+				<div class="social__item">
+				  <a target="blank" href="https://twitter.com/Twitter">  <img src="img/header/twitter.png" alt=""> </a>
+				</div>
+				<div class="social__item">
+				  <a target="blank" href=https://investor.fb.com/home/default.aspx">  <img src="./img/header/facebook.png" alt=""> </a>
+				</div>
+				<div class="social__item">
+				  <a target="blank" href="https://www.google.com/">  <img src="./img/header/google.png" alt=""> </a>
+				</div>
+				<div class="social__item">
+				  <a target="blank" href="https://in.pinterest.com/">  <img src="./img/header/pinterest.png" alt=""> </a>
+				</div>
+				<div class="social__item">
+				<a target="blank" href="https://www.instagram.com/instagram/?hl=en"> <img src="./img/header/ph.png" alt=""> </a>
+				</div>
+			  </div><!--/.social -->
+			</div>
+		  </div>
+		  <div class="row copyright">
+			<p class="copyright__item">Copyright © 2021 Bistro Cafe. All rights reserved.</p>
+			<p class="copyright__item_sb">Designed by TemplatesJungle</p>
+		  </div>
+		</div>
+	  </footer>
+   
+	 
+	</body>
+  
+  </html>
+  

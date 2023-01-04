@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+    <head>
+        <title>About Us</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="stylesheet" type="text/css" href="css/footer-copy.css">
+        <link rel="stylesheet" href="css/header-copy.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/menu-burger.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/header/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          #img-borders{
+            margin-left:20%; 
+            border-radius:150px;
+          } #img-borders1{
+            border-radius:150px;
+          }
+          .cursor{
+            border-radius:65px;
+          }
+          body{
+            background-image: url(img/who-we-are/bg.jpg);
+          }
+          /*Aplikimi i njeres nga 3D transforms property*/
+          .img1:hover{
+          	  -webkit-transform: scaleX(-1);
+              -moz-transform: scaleX(-1);
+              -o-transform: scaleX(-1);
+              -ms-transform: scaleX(-1);
+  			  transform: scaleX(-1);
+          transition: all 2s linear;
+          }
+          .img2:hover{
+          	transform: rotateX(50deg);
+            -webkit-transform:rotateX(50deg);
+              -moz-transform:rotateX(50deg);
+              -o-transform: rotateX(50deg);
+              -ms-transform: rotateX(50deg);
+              
+          }
+          .img3:hover{
+          	transform: rotateY(50deg);
+            -webkit-transform: rotateY(50deg);
+              -moz-transform: rotateY(50deg);
+              -o-transform: rotateY(50deg);
+              -ms-transform: rotateY(50deg);
+              transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              transition-delay: 0.5s;
+              transform: perspective(500px) rotateX(120deg);
+          }
+          .img4:hover{
+            transition: all 2s ease-in-out;
+           transition-delay: 0.3s;
+           transform: skew(-15deg);
+          }
+        </style>
+       
+       
+    </head>
+    <body>  
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="header__inner">
+              <nav class="menu">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="game.html">Game</a>
+  
+                  </div>
+                </div>
+                </ul>
+              </nav><!--/.menu -->
+              <div class="logo">
+                <img src="./img/header/logo.png" alt="">
+              </div><!--/.logo -->
+               <div class="social">
+                <div class="social__item">
+                  <a target="blank" href="https://twitter.com/Twitter">  <img src="./img/header/twitter.png" alt=""> </a>
+                </div>
+                <div class="social__item">
+                  <a target="blank" href=https://investor.fb.com/home/default.aspx">  <img src="./img/header/facebook.png" alt=""> </a>
+                </div>
+                <div class="social__item">
+                  <a target="blank" href="https://www.google.com/">  <img src="./img/header/google.png" alt=""> </a>
+                </div>
+                <div class="social__item">
+                  <a target="blank" href="https://in.pinterest.com/">  <img src="./img/header/pinterest.png" alt=""> </a>
+                </div>
+                <div class="social__item">
+                <a target="blank" href="https://www.instagram.com/instagram/?hl=en"> <img src="./img/header/ph.png" alt=""> </a>
+                </div>
+              </div><!--/.social -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="intro__inner">
+              <h2 class="intro__suptitle">Nothing brings together like</h2>
+              <h1 class="intro__title">Bistro Cafe</h1>
+              <div class="intro__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi conse quat ipsum, nec sagittis sem nibh id elituis sed odio sit amet.</div>
+              <div class="general-button">
+                <a href="#about" class="general-button__link">Abous Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+     
+
+      <section class="about" id="about">
+        <div class="row_">
+          <div class="col50">
+            <h2 class="titletext">Our <span>S</span>tory</h2>
+            <p>DELICIOUS AND HEALTHY FOOD COMES FIRST <br><br>
+              <dl>
+              Consistently, in excess of 2 million visitors visit ‘Bistro Cafe’  eateries around the globe.
+               What’s more, they do as such in light of the fact that our eateries are known for serving 
+               <dd>
+              astounding</dd> <dd>incredible tasting</dd> <dd>and reasonable food.</dd> Established in 1996, ‘Bistro Cafe’ ®is 
+               the second biggest south Indian restaurant chain in India. 
+               The first home of customary biriyani, our promise to premium fixings, signature formulas, 
+               and family-accommodating feasting encounters is the thing that has characterized our image 
+               for in excess of 26 fruitful years.</dl>
+            </p>
+          </div>
+          <div class="col50">
+            <div class="imgbox">
+              <img  id="img-borders" src="img/who-we-are/event.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="row1">
+          <div class="col51">
+            <div class="imgbox">
+              <img id="img-borders" src="img/who-we-are/what_we_do.png">
+            </div>
+          </div>
+          <div class="col51">
+            <h2 class="titletext"><span>W</span>hat We Do</h2>
+            <p>DELICIOUS AND HEALTHY FOOD COMES FIRST <br><br>
+             <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nemo?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit.
+                <ol>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+             </ul>
+            </p>
+          </div>
+        
+        </div>
+
+      </section>
+
+
+     
+      <section class="menu-gallery">
+      <div class="moving-menu">
+        <h2 class="titletext"><span>F</span>ood Gallery</h2>
+        <p>Here is a glimpse of our delicious meals</p>
+     </div>
+
+  <div class="presentation-menu">
+    
+  </div>
+  <div class="general-button" id="menu-button">
+    <a href="menu.html" class="general-button__link">View Complete Menu</a>
+  </div>
+</section>
+ 
+  <section class="grid_display">
+    <h2 class="titletext">Our <span>E</span>vents</h2>
+    <p>Nothing brings together like Bistro Cafe</p>
+
+    <div class="container1">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img  id="img-borders1" class="grid" src="img/who-we-are/event1.jpeg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img id="img-borders1" class="grid" src="img/who-we-are/party1.jpeg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img id="img-borders1" class="grid" src="img/who-we-are/party4.jpg" style="width:70%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img id="img-borders1" class="grid" src="img/who-we-are/event4.jpg" style="width:70%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img id="img-borders1" class="grid" src="img/who-we-are/event5.jpg" style="width:70%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img id="img-borders1" class="grid" src="img/who-we-are/event6.jpg" style="width:70%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row_2">
+        <div class="column">
+          <img class="demo cursor" src="img/who-we-are/event1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="1">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/who-we-are/party1.jpeg" style="width:100%" onclick="currentSlide(2)" alt="2">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/who-we-are/party4.jpg" style="width:100%" onclick="currentSlide(3)" alt="3">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/who-we-are/event4.jpg" style="width:100%" onclick="currentSlide(4)" alt="4">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/who-we-are/event5.jpg" style="width:100%" onclick="currentSlide(5)" alt="5">
+        </div>    
+        <div class="column">
+          <img class="demo cursor"src="img/who-we-are/event6.jpg" style="width:100%" onclick="currentSlide(6)" alt="6">
+        </div>
+      </div>
+    </div>
+    </section> 
+  
+   
+     
+
+<section class="expert" id="expert">
+	<div class="title">
+		<h2 class="titletext">Our Kitchen <span>E</span>xperts</h2>
+		<p>Chefs don't make mistakes, instead they make new dishes.</p>
+	</div>
+	<div class="content">
+		<div class="box">
+			<div class="imgbox">
+				<img id="img-borders" class="img1" src="img/who-we-are/cheff2.jpg">
+			</div>
+			<div class="text">
+				<h3>Head chef <br> Venera Tha&#231;i <br>
+				    Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <br> 
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9735388261 <br>
+					<i class="fa fa-envelope"></i> venera.tha&#231;i@bistro.com
+				</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img id="img-borders" class="img2" src="img/who-we-are/cheff1.jpg">
+			</div>
+			<div class="text">
+				<h3>Asst chef <br>
+					&#199;lirim Berisha <br>
+					Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <br>
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9735326135 <br>
+					<i class="fa fa-envelope"></i>  &#231;lirim.berisha@bistro.com
+				</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img id="img-borders" class="img3" src="img/who-we-are/cheff3.jpg">
+			</div>
+			<div class="text">
+				<h3>Asst chef <br>&#203;nd&#235;rra Elezi <br>
+					Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <br>
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9735384521 <br>
+					<i class="fa fa-envelope"></i>  &#235;nd&#235;rra.elezi@bistro.com
+				</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img id="img-borders" class="img4" src="img/who-we-are/cheff4.jpg">
+			</div>
+			<div class="text">
+				<h3>Asst chef <br> Art Berisha <br>
+					Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i> <br>
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9794838826 <br>
+					<i class="fa fa-envelope"></i>  art.berisha@bistro.com
+				</h3>
+			</div>
+		</div>
+
+    
+	</div>
+</section>
+
+<section class="contact-us">
+<h1 class="titletext"><span>C</span>ontact our staff!</h2>  
+<div class="about-search">
+
+
+    <table>
+  <thead>
+    <tr>
+      <th colspan="4">Contact Us</th>
+    </tr>
+  <tr>
+    <th>Position</th>
+    <th colspan="2">Firstname & Lastname</th>
+ 
+    <th>Email</th>
+   
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td rowspan="2">Co-founder</td>
+    <td>Ermira</td>
+    <td>Haziri</td>
+    <td><a href="mailto:ermira.haziri@bistro.com">ermira.haziri@bistro.com</a></td>
+    
+  </tr>
+  <td>Erlisa</td>
+  <td>Lokaj</td>
+  <td><a href="mailto:erlisa.lokaj@bistro.com">erlisa.lokaj@bistro.com</a></td>
+  <tr>
+   
+  </tr>
+  <tr>
+    <td rowspan="2">Head Chef</td>
+    <td>Venera</td>
+    <td>Tha&#231;i</td>
+    <td><a href="mailto:venera.tha&#231;i@bistro.com">venera.tha&#231;i@bistro.com</a></td>
+  </tr>
+  <td>Lind&#235;</td>
+    <td>Rexha</td>
+    <td><a href="mailto:lind&#235;.rexha@bistro.com">lind&#235;.rexha@bistro.com</a></td>
+<tr/>
+  <tr>
+    <td rowspan="3">Asst chef</td>
+    <td>&#199;lirim</td>
+    <td>Berisha</td>
+    <td><a href="mailto:&#231;lirim.berisha@bistro.com">&#231;lirim.berisha@bistro.com</a></td>
+  </tr>
+  <td>Shaban</td>
+    <td>Ejupi</td>
+    <td><a href="mailto:shaban.ejupi@bistro.com">shaban.ejupi@bistro.com</a></td>
+  <tr>
+    <td>&#203;nd&#235;rra</td>
+    <td>Elezi</td>
+    <td><a href="mailto:&#235;nd&#235;rra.elezi@bistro.com">&#235;nd&#235;rra.elezi@bistro.com</a></td>
+    
+  </tr>
+  </tbody>
+</table>
+<div>
+  <figure>
+    <img src="img/who-we-are/imazh.jpeg" width="480px">
+    <figcaption>Our staff while working</figcaption>
+  </figure>
+
+</div>
+</div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="row subscribe">
+        
+        <div class="subscribe__item">
+         
+        </div>
+      </div>
+    </div>
+    <div class="row footer-menu">
+      <div class="footer-menu__item">
+        <h4 class="footer-menu__title">Contact Location</h4>
+        <p class="footer-menu__text">3784 Patterson Road,<br> #8 New York, CA 69000 <br><span>(201) 256 - 3689</span></p>
+      </div>
+      <div class="footer-menu__item">
+        <h4 class="footer-menu__title">Working Hours</h4>
+        <p class="footer-menu__text">Monday - Friday</p>
+        <span class="footer-menu__time">09:00 AM - 10:00 PM</span>
+      </div>
+      <div class="footer-menu__item">
+        <p class="footer-menu__text_p">Saturday - Sunday</p>
+        <span class="footer-menu__time">09:00 AM - 11:00 PM</span>
+      </div>
+      <div class="footer-menu__item">
+        <h4 class="footer-menu__title">Social Network</h4>
+
+      
+        
+        <div class="social social_show">
+          <div class="social__item">
+            <img src="./img/header/twitter.png" alt="">
+          </div>
+          <div class="social__item">
+            <img src="./img/header/facebook.png" alt="">
+          </div>
+          <div class="social__item">
+            <img src="./img/header/google.png" alt="">
+          </div>
+          <div class="social__item">
+            <img src="./img/header/pinterest.png" alt="">
+          </div>
+          <div class="social__item">
+            <img src="./img/header/ph.png" alt="">
+          </div>
+        </div><!--/.social -->
+      </div>
+    </div>
+    <div class="row copyright">
+      <p class="copyright__item">Copyright © 2021 Bistro Cafe. All rights reserved.</p>
+      <p class="copyright__item_sb">Designed by TemplatesJungle</p>
+    </div>
+  </div>
+</footer>
+
+    </body>
+
+</html>
