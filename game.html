@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game </title>
+    <link rel="icon" href="img/header/favicon.ico">
+    <link rel="stylesheet" href="css/game.css">
+   <script src="js/handleError.js"></script>
+  </head>
+  <body onload="addVisitForPage('game');greet();">
+    <div class="textin">
+      <canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas></div>
+<script src="js/textin.js"></script>
+
+    <div class="body" id="background">
+        <main id="gameSec">
+            <div id="firstDiv" class="contentDiv">
+                <canvas id="canvas" height="805px" width="800px">
+        Your browser does not support canvas. 
+        </canvas>
+            </div>
+            <div id="secondDiv" class="contentDiv">
+                <input type="button" value="&larr;" class="button" id="leftButton" />
+                <input type="button" value="&uarr;" class="button" id="upButton" />
+                <input type="button" value="&darr;" class="button" id="downButton" />
+                <input type="button" value="&rarr;" class="button" id="rightButton" />
+            </div>
+
+            <div id="svgSec">
+                <svg  class="format" width="800px" height="400px">
+          <ellipse cx="400" cy="200" rx="300"  ry="200"stroke-width="2"  stroke="black" fill="pink"
+          />
+          <circle cx="225" cy="100" r="100" stroke="black" fill="blue" />
+          <rect x="500"  y="100" stroke-width="10" width="250" height="60"fill="beige"stroke="purple"
+          />
+          <polygon points="250,60 100,400 400,400" class="triangle"  
+          width="500px" fill="brown"/>
+        </svg>
+           </div>
+
+           <script>
+            
+         setInterval(
+          function () {
+         var randomColor = Math.floor(Math.random()*16777215).toString(16);
+         document.body.style.backgroundColor = "#"+randomColor;
+          },1000);
+            </script>
+        </main>
+      </div>
+        <div class="imageCanvas">
+        <img id="robot" width="200" height="250"
+src="img/Radio-Bot-Animated-Sm.gif" alt="The robot">
+<canvas id="myCanvas1" width="230" height="330"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas></div>
+ 
+   
+    <script src="js/game.js"></script>
+
+    <div class="DragSection">
+      <p>Drag the image between the two rectangles:</p>
+      <div class="dragWidth">
+
+          <div class="droptarget" id="firstDiv">
+              <img src="img/header/logo.png" width="200px" height="150px" alt="" draggable="true" id="dragtarget">
+          </div>
+          <div class="droptarget"></div>
+      </div>
+  </div>
+  
+  <p class="videotext">Here is some music while you're at it.</p>
+    <div class="video">
+      <video autoplay id="video1" width="800">
+        <source src="img/5 Seconds of Summer - Lonely Heart (Official Audio).mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+   <div style="outline: 4px solid violet ; margin-left: 320px; margin-right: 300px;"><p  >"HTML game is so much fun."</p>
+    <p>Click the button to do a global search for "game" in the sentence above:</p>
+    <button onclick="myFunction()"  style="background-color: violet; margin-left: 200px;">Search</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    </div>
+    <div style="outline: 4px solid violet ; margin-left: 320px; margin-right: 300px;">
+      
+    <p>"HTML GAME is so much fun."</p>
+    <p>Click the button to do a case-insensitive search for "game" in the sentence above:</p>
+    <button onclick="myFunction1()"  style="background-color: violet; margin-left: 200px;">Search</button>
+    <p id="demoo"></p>
+    <p id="demoo1"></p>
+  </div>
+<script>
+  function myFunction()
+{  let text = "HTML game is so much fun.";
+ let pattern = /game/g; 
+  let result = pattern.exec(text);
+document.getElementById("demo").innerHTML = result;
+let patternn = /game/g; 
+ let result2 = patternn.test(text);
+ document.getElementById("demo1").innerHTML = result2;}
+</script>
+
+<script>
+  function myFunction1(){
+   let text1 = "HTML GAME is so much fun.";
+ let pattern1 = /game/i; 
+  let result1 = pattern1.exec(text1);
+document.getElementById("demoo").innerHTML = result1;
+let result3 = pattern1.test(text1);
+ document.getElementById("demoo1").innerHTML = result3;}
+</script>
+<script>
+
+ 
+ </script>
+ <script>
+  let text12 = "HTML GAME is so much fun.";
+  let pattern12 = /game/i; 
+
+</script>
+
+    <p class="rate">How fun was this for you? (from 1-10)</p>
+
+    <input id="rate" type="text">
+    <button type="button" id="rated" onclick="myFunction1()">Rate</button>
+    <p id="type"></p>
+    <p id="hidden">Don't hesitate !</p>
+    <div class="table">
+
+      
+</body>
+ <script src="js/dragAndDrop.js"></script>
+</html>
