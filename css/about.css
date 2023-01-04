@@ -331,5 +331,52 @@ a:active{
 }
 
 
+.about-search{
+	margin-left:0;
+	margin-bottom: 50px;
+  display:flex;
+  justify-content: space-evenly;
+  
+  align-items: center;
+}
+
+.about-search table{
+
+	font-family: 'Playfair Display', serif;
+  border-collapse: collapse;
+  width:fit-content;
+  height: fit-content;
+  border: 1px solid red;
+  color: #330033;
+
+}
+figure{
+  text-align: center;}
+  figcaption{
+    font-family: 'Playfair Display', serif;
+    color: grey;
+
+  }
+  .contact-us{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;;
+  }
+
+  .contact-us .titletext{
+ 
+    margin-bottom:40px;
+  }
+.about-search td,th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+
+
+
+
 
 
